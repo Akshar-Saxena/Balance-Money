@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic A/c Handler - Make your calculations easier</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'solway';
+            color: white;
+        }
+
+        body {
+            background-color: #B8B8B8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 9vh;
+            background-color: #6D6D6D;
+            filter: drop-shadow(0 10px 10px white);
+        }
+
+        .block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 6%;
+        }
+
+        .mainData {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 35%;
+            height: 68vh;
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            border-radius: 10px;
+            filter: drop-shadow(0 10px 10px grey);
+        }
+
+        .mainData input:focus {
+            outline: none;
+        }
+
+        .mainData img {
+            margin-top: 40px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            width: 70%;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #797979;
+            border: none;
+        }
+
+        button:hover {
+            cursor: pointer;
+            outline: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>
+            Welcome to Basic A/c Handler
+        </h1>
+    </nav>
+    <div class="block">
+        <div class="mainData" id="data">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="">
+            <div class="buttons">
+                <button id="signup">SignUp</button>
+                <button id="login">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btnS = document.querySelector('#signup')
+        const btnL = document.querySelector('#login')
+        const mainData = document.querySelector('#data')
+        const temp = mainData.innerHTML
+        let back;
+
+        btnS.addEventListener('click', (e) => {
+            window.location.href = '/signup'
+        })
+        btnL.addEventListener('click', (e) => {
+            window.location.href = '/login'
+        })
+    </script>
+</body>
+
+</html>

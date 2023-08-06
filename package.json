@@ -1,0 +1,16 @@
+{
+  "name": "money-balance",
+  "version": "1.0.0",
+  "description": "This is a money balancing website based on node and mongoDB",
+  "main": "server.js", "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Akshar Saxena",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0"
+  }
+}
